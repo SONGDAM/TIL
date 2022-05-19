@@ -4,6 +4,6 @@
 
 <hr/>
 
-1. [Markup]
-2. [JavaScript]
-3. [React]
+1. Markup
+2. JavaScript
+3. React
