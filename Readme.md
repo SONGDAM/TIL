@@ -3,5 +3,8 @@
 <hr/>
 
 1. [Markup](Markup)
-2. JavaScript
+2. [JavaScript](Java)
 3. [React](React)
+4. [TypeScript](TypeScript)
+5. [Algorithm](Algorithm)
+6. [CS](CS)

@@ -183,3 +183,5 @@ function ResultsSection() {
 fallback이라는 property를 통해서 비동기처리가 완료될떄까지 fallback에 있는 컨텐츠를 보여주고 비동기처리가 완료되면 QueryResult를 불러온다.
 
 비동기처리의 방식이 조금 제한적이라 다른 라이브러리도 더 찾아봐야겠다는 생각이든다. 그래서 react-query를 사용하는걸지도...
+
+하지만 난 리코일이 직관적이라 너무 좋다..
