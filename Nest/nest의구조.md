@@ -68,8 +68,16 @@ Nest의 기본 시스템은 모듈이다.
 
 Nest의 공식문서를 참고하면 **많은 기본 Nest 클래스는 서비스, 리포지토리, 팩토리, 헬퍼 등 공급자로 취급될 수 있습니다.**라고 되어있다. 위에 작성한 코드를 보면 controller를 통해 service로 접근하는데 여기서 service가 provider로 취급되는것이다.
 
-공급자로 취급된 것들은 @Injectable()데코레이터를 통해 공급자로 취급된다.
+@Injectable()데코레이터를 통해 provider로 취급되어 dependency injection이 가능하다.
 
 app.module.ts에 등록한 provider를 통해 controller는 provider를 인스턴스로 제공받아서 사용할 수 있다.
 
 이것이 Nest의 의존성 주입이다.
+
+## 캡슐화(은닉화)
+
+모듈은 provider를 캡슐화한다. Nest에서는 기본적으로 exports되지 않은 모듈을 바깥에서 사용할 수 없다. 공급자가 현재 모듈의 일부분이 아니거나 exports를 하지 않은 공급자라면 provider를 사용할 수 없다.
+
+exports를 하면 다른 모듈에서도 provider를 사용할 수 있다.(캡슐화 해제)
+
+또한 **단일 책임의 원칙**을 준수하여 분리된 모듈을 최대한 격리한다.
